@@ -29,6 +29,22 @@ float AssetTracker::readLat(){
     return gps.latitude;
 }
 
+float AssetTracker::speed() {
+    return gps.speed;
+}
+
+float AssetTracker::altitude() {
+    return gps.altitude;
+}
+
+float AssetTracker::horizontalAccuracy() {
+    return gps.HDOP;
+}
+
+float AssetTracker::heading() {
+    return gps.angle;
+}
+
 float AssetTracker::readLon(){
     return gps.longitude;
 }
@@ -37,6 +53,7 @@ String AssetTracker::readLatLon(){
     String latLon = String::format("%f,%f",gps.latitudeDegrees,gps.longitudeDegrees);
     return latLon;
 }
+
 
 void AssetTracker::gpsOn(){
     // Power to the GPS is controlled by a FET connected to D6
