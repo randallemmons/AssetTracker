@@ -26,7 +26,7 @@ void AssetTracker::begin(){
 }
 
 float AssetTracker::readLat(){
-    return gps.latitude;
+    return gps.latitudeDegrees;
 }
 
 float AssetTracker::speed() {
@@ -46,7 +46,7 @@ float AssetTracker::heading() {
 }
 
 float AssetTracker::readLon(){
-    return gps.longitude;
+    return gps.longitudeDegrees;
 }
 
 String AssetTracker::readLatLon(){
