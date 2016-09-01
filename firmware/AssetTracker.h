@@ -20,9 +20,13 @@ class AssetTracker {
     readY(void),
     readZ(void),
     readXYZmagnitude(void);
-  float
+ float
     readLat(void),
-    readLon(void);
+    readLon(void),
+    speed(void),
+    heading(void),
+    altitude(void),
+    horizontalAccuracy(void);
   bool
     gpsFix(void);
   char
